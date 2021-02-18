@@ -6,6 +6,7 @@
         <style>
             h1{
               color:rgb(255, 0, 0);  
+                margin:10px;
             }
             body{
              background-color:rgb(0, 255, 98); 
@@ -13,28 +14,38 @@
              border-top:10px groove red;
              border-left:10px groove yellow;
              border-right:10px groove yellow;
-             border-bottom:10px groove red;   
+             border-bottom:10px groove red;
+            }
+            #imagen{
+              width:300px; 
+              float:left;
             }
             #greet{
                 float:right;
                 width:30%;
                 margin-bottom:-37px;
             }
-            
+            #Juegos{
+              float:left;  
+            }
         </style>
     </head>
     <body>
-    
-        <h1>¡Hola! ¡Bienvenido a MrGithub2021.espanol.com!</h1>
-        <a href="https://mrgithub2021.github.io/MrGithub2021.espanolgithub.io/">Enlace a mi sitio web.</a>
-        <h4>¡La Gran Muralla de China!</h4>
-        <p id ="greet">¡Hola, bienvenido a MrGithub2021.espanol.com! ¡Este sitio es asombroso! ¡Haga clic en las imágenes para ver algo!<br><br>
-        </p>
-        <a href="https://mrgithub2021.github.io/MrGithub2021.espanolgames.com/">Enlace a mi sitio web.</a>
-    <h4>¡Mis juegos favoritos (algunos los hice yo)!</h4>
+    <h1> ¡Hola! ¡Bienvenido a MrGithub2021.com! </h1>
+        <a href="https://mrgithub2021.espanolgithub.io/"> <img id = "imagen"> <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/ Greatwall_large.jpg / 800px-Greatwall_large.jpg "img height =" 306 "img width =" 334 "alt =" Imagen de la Gran Muralla China "> </a>
+        <h4> ¡La Gran Muralla China! (Imagen cortesía de Wikipedia) </h4>
+        <p id = "greet"> ¡Hola! ¡Bienvenido a MrGithub2021.com! <br> ¡Este sitio es increíble! Haga clic en las imágenes <br>
+        para mirar algo! </p>
+        <a href="https://mrgithub2021.github.io/MrGithub2021.espanolgames.com/"> <img id = "Juegos"> <img src = "https://fanatical.imgix.net/product/original/ f6d1c40c-f49c-4f5d-b908-0eeb01d9ab78.jpg? auto = compress, format & w = 400 & fit = max "alt =" Two Racing craft racing on Mars "> </a>
+        <h4> Mis juegos favoritos (algunos los hice yo || Imagen cortesía de https://fanatical.imgix.net)! </h4>
+        <a href="https://mrgithub2021.github.io/MrGithub2021.espanolland.io/"> <img id = "Alemania"> <img src = "https://encrypted-tbn0.gstatic.com/images? q = tbn: ANd9GcTN7__FXf3AjwsR4LHGa_sTc8WSbvEv9_CzIQ & usqp = CAU "alt =" Imagen del Parlamento alemán "> </a>
+        <h4> ¡El Parlamento alemán! (Imagen cortesía de Wikipedia.) <h4>
         <p>Para otros idiomas:<a href="https://mrgithub2021.github.io/MrGithub2021.com/">English</a>,<br><a href="https://mrgithub2021.github.io/MrGithub2021.russian.com/">Pусский</a></p>
-    <a href="https://mrgithub2021.github.io/MrGithub2021.espanol.land.io/">Enlace a mi sitio web.</a>
-        <h4>¡El parlamento alemán!</h4>
     </body>
-    
+    <script>
+var avatarEls = document.getElementsByTagName("img");
+ for(var i = 0; i < avatarEls.length; i++){
+    avatarEls[i].title = avatarEls[i].alt;
+ }
+    </script>
 </html>
